@@ -20,9 +20,9 @@
     <style>
         /* this is a comment CSS (styling) */
         table { /* Apply these styles to all table elements */
-            font-family: arial, sans-serif;
+            font-family: arial, sans-serif; /* Use arial font, if not available use any sans-serif font */
             width: 100%;
-            border-collapse: collapse;
+           
         }
       
         td, th { /* Apply these styles to all td and th elements */
@@ -36,8 +36,12 @@
          }
       </style> <!-- End of embedded CSS (styling) for the document -->
 </head>
-<body>
-    <nav>
+<body> <!-- What is displayed in hte viewport for the user to see-->
+    <nav> <!-- identifies the navigation for the application -->
+        <!-- the anchor tag (a) sets up links to somwhere else-->
+        <!-- href = specifies where to go when the word for the tag is clicked -->
+        <!-- the path ./ = from where you are /filename -->
+        <!-- when you are in a project. means the project folder -->
         <a href="./index.html">Home</a>
         <a href="./state_seals.html">State Seals</a>
         <a href="./state_videos.html">State Video</a>
@@ -88,7 +92,24 @@
         </tr>
         
     </table>
+<!-- Form to recieve information about a user                                      -->
+<!-- when the submit button is clicked the data in the form can be sent to an API  -->
+<!-- method="POST" says send the data to the API to be saved                       -->
+<!-- action="url-for-the-API-to-receive-the-data"                                  -->
+<form method="POST" action="https://65ce8e89c715428e8b40f033.mockapi.io/userinfo">
+    <!-- Ask for user name                                                         -->
+    <!-- id="name-used-to-referece-the-control-in-the-HTML-document"               -->
+    <!-- name="name-used-by-external-process-to-acess-the-data-entered-by-the-user"-->
+    <!-- and example of an external process is a program or an API                 -->
+    <!-- the lable tag adds a prompt/word to the control for="id-for-control "     -->
+    <label for="namfield">Your Name:</label>
+    <input type="text" id="namefield" name="PersonName" />
 
+    <label for="email-address">What's your email address:</label>
+    <input type="text" id="email-address" name="email" />
+
+    <input type="submit">Click Me</input>
+</form>
 
 </body>
 </html>
