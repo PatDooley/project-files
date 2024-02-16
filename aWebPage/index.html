@@ -1,0 +1,93 @@
+<!DOCTYPE html>    <!-- DOCTYPE tells the browser what type of content is in the file -->
+                   <!--For some broswer its optional - code it any way                -->
+<!--This is an HTML comment-->
+<!--When you see an less-that-sign exclamation point  -->
+<!--    its directions or information for the browser -->
+<html lang="en">    <!-- this marks the start of the HTML document and indicates it in English -->
+
+<head>      <!-- This contains information for the browser - it is not displayed -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pat's Web Page</title>     <!-- What is displaued in the tab for page in the browser-->
+</head> <!-- marks the end of the head-tag -->
+
+<body> <!-- The main part of the page - it is what is shwon in the browser -->
+    <h1>This is our first web page from class</h1>
+    <h4>It's pretty basic, does illustrate html fundamentals</h4>
+    <!-- the paragraph tag will start on a new line -->
+    <p> This will be displayed on our web page </p>
+    <p>That we are creating in today's live session</p>
+
+    <h5>Exanoke of an unordered list of Star Trek People </h5>
+    <ul> <!-- start of the unordered list       -->
+            <li>Kirt</li>
+            <li>Spock</li>
+            <li>Bones (Dr.McCoy</li>
+    </ul>
+
+    <h5>Exanoke of an unordered list of Star Trek People </h5>
+    <ol> <!-- start of the unordered list       -->
+            <li>Kirt</li>
+            <li>Spock</li>
+            <li>Bones (Dr.McCoy</li>
+    </ol>
+    <dl>
+        <dt>Instructor</dt>
+        <dd>Frank</dd>
+        <dt>Some Learners</dt>
+        <dd>Adam</dd>
+        <dd>Elena</dd>
+        <dd>Tsion</dd>
+        <dd>Diana</dd>
+    </dl>
+<!-- An HYML presenets data in row/column format-->
+<!--Typically a table has:                      -->
+<!--        a title                             -->
+<!--        rows and columns                    -->
+<!-- Define the start of the HTML               -->
+<style>
+    table {
+    font-family: arial, san-serif;
+    width: 50%;
+    border-collapse: separate;
+
+    }
+
+    td, th {
+        border: 1px solid black;
+        text-align: center;
+        padding: 4px;
+
+    }
+
+    tr:nth-child(even)  {
+        background-color: beige;
+    }
+
+</style>
+
+<h1>example table chart</h1>
+<table>
+    <thead>
+            <tr>
+                <th>Header</th>
+                <th>Header2</th>
+            </tr>
+    
+    </thead>
+            <tr>
+                <td>This is a row</td>
+                <td>is 6 points</td>
+                
+            </tr>
+            <tr>
+                <td>Content of the column</td>
+                <td>more contentttt!!!</td>
+            </tr>
+
+</table>
+
+</body> <!--marks the end of the body-tag       -->
+
+</html> <!-- marks the end of the html          -->
