@@ -101,50 +101,66 @@
     <!-- Ask for user name -->
     <!-- id="name-used-to-reference-the-control-in-the-html-document"            -->
     <!-- name="name-used-by-external-process-to-access-the-data-entered-by-user" -->
-    <!-- an example of an external process is a program or an API 
+    <!-- an example of an external process is a program or an API                -->
     <!-- the label tag adds a prompt/word to the control for="id-for-control"    -->
 
     <!-- the div tag allows us to group elements for styling or spacing -->
     <!-- Each div element starts on a new line by default               -->
     <div>
-        <label for="fnamefield">FIrst Name:</label>
+        <label for="fnamefield">First Name:</label>
         <input type="text" id="fnamefield" name="fname"/>
-    
+    </div>
     <div>
         <label for="lnamefield">Last Name:</label>
         <input type="text" id="lnamefield" name="lname"/>
     </div>
     <div>
+    <!-- type="date" generate a basic date picker on the page -->
         <label for="bdate"> Birth Date:</label>
         <input type="date" id="bdate" name="birthDate">
     </div>
     <div>
+    <!-- the select tag creates a dropdown list -->
+    <!-- the name="" on the selecttag is the name if the variable to hold data --> 
+    <!-- the option tags within the slect tag provide the choices -->
+    <!-- the value"" in the option tag is what gets stored for the choice-->
+    <!-- the content of the option tag is what is displayed as a choice -->   
+
         <label for=""foodfield>Cuisine Preference:</label>
         <select name="FoodPrefs" id="foodfield">
             <option value="italian">Italian</option>
             <option value="mexican">Mexican</option> 
             <option value="indian">Indian</option>
-            <object value="american">USA</object>
+            <option value="american">USA</option>
             <option value="chinese">Chinese</option>
             <option value="japanese">Japanese</option>
             <option value="vietnamese">vietnamese</option>
             <option value="french">French</option>
             <option value="other">Other cuisine</option>
+            
         </select>
+        
     </div>
     <div>
         <p>Contact Information:</p>
         <label for="email-address">What's your email adddress:</label>
         <input type="text" id="email-address" name="email"/>
-        <br>
+        <!-- if you watna blank line inside a div use br tag                            -->
+        <br> <!-- the br tag is the only tag that does not require and end tag (</br>)  -->
+        <!-- the type="radio" generates radio buttons - only one can be chosen          -->
+        <!-- use the same name="" for radio buttons in the same group                   -->
+        <!-- the value="" on the element is the value stored in the variable            -->
+        <!--    if the radio button is selected                                         -->
         May we contact you?
             <input type="radio" id="emailyesfield"   name="email-preference" value="yes"/>
             <label for="emailyesfield">Sure</label>
             <input type="radio" id="emailnofield"   name="email-preference" value="no"/>
-            <label for="emailyesfield">No Way!!!</label>
+            <label for="emailnofield">No Way!!!</label>
     </div>
 
     <div>
+        <!-- checkbox tag generates a checkbox group where multiple choices allowed     -->
+        <!-- the name="" -->
         <p>Do you like any sports?</p>
         <input type="checkbox" id="football" name="preferredSport" value="Football">
         <label for="football">American Football</label>
@@ -169,6 +185,11 @@
     </div>
     <div>
         <br>    
+        <!-- type="submit" generates a submit buttom                                     -->
+        <!-- a submit buttom sends the data from the form to the URL specified           -->
+        <!--                in the action="attribute on the form tag"                    -->
+        <!--                using the request type specified in the method=""on the from -->
+
         <input type="submit" value="Click to Submit"/> 
     </div>
 </form>
