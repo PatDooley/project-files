@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <header>
+    <h2>AAF</h2>
+        <nav class=" navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <ul>
+                <a href="./index.html">HOME</a>
+                <a href="/create account.html">MAKE AN ACCOUNT</a>
+                <a href="./client_meeting_schedule_web_page.html">SCHEDULE A MEETING</a>
+                
+            </ul>  
+        </nav>
+        </header>
+    
+    <div class="wrapper">
+        <form id="loginForm">
+            <h1>Login</h1>
+   
+    <div class="input-box">
+                <input type="text" placeholder="Username" name="username" id="username"
+                required>
+    </div>
+    
+    <div class="input-box">             <!-- I am using div to futher my options in my style sheet rather than using simple <br>(breaks) between each input -->
+                <input type="password" placeholder="Password" name="password" id="password"
+                required>
+    </div>
+    
+    <div class="rememeber-forgot">
+        <label><input type="checkbox"> Remember me</label>
+        <a href="#">Forgot password?</a>
+    </div>
+    
+    <button type="submit" class="btn">Login</button>    
+    
+   
+    <div class="register-link">
+        <p>Don't have an account?! <a href="./create account.html">Register here!</a>
+        </p>
+    </div>
+    
+    </form>
+
+    </div>    
+    <script scr="login.js"></script>
+
+</body>
+
+
+</html>

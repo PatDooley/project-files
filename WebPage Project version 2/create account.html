@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create account page</title>
+    <link rel="stylesheet" href="create_account.css">
+</head>
+<body>
+    <header>
+        <h2>AAF</h2>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <ul>
+                <li><a href="./index.html">HOME</a></li>
+            </ul>  
+            <form action="./login.html">
+                <button type="Login" class="btnLogin">Login</button>
+            </form>
+        </nav>
+    </header>
+     
+    <div class="wrapper">
+        <form id="registerForm" action="http://localhost:3000/register" method="POST">
+            <h1>Create account</h1>
+   
+            <div class="input-box">
+                <input type="text" placeholder="Create Username" name="newUsername" id="newUsername" required>
+            </div>
+    
+            <div class="input-box">
+                <input type="password" placeholder="Create Password" name="newPassword" id="newPassword" required>
+            </div>
+            
+            <div class="input-box">
+                <input type="password" placeholder="Confirm Password" name="confirm_password" id="confirm_password" required>
+            </div>
+    
+            <div class="terms">
+                <label><input type="checkbox"> I agree to the terms & conditions</label>
+            </div>
+    
+            <button type="submit" class="btn">Register</button>    
+        </form>
+    </div>
+    
+    <script src="register.js"></script>
+</body>
+</html>

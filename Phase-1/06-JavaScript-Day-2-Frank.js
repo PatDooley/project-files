@@ -88,7 +88,7 @@ console.log(`The sum is: ${sum} and the average is: ${sum / numbers.length}`)
 //                                 giving each element the elementName
 //                                 Use the elementName n the loop body 
 //                                 to reference the current element
-//                                 This for-loop does not make the index available
+//                                 This for-loop does not make the index available 
 
 // Process each element in the array
 //   1. Display each element 
@@ -353,6 +353,7 @@ function Add(num1, num2, num3) {
   return num1 + num2 + num3;
 }
 
+
 /*
 ########################
 Math Library
@@ -440,7 +441,7 @@ function stringFunctions(value) {
     
     console.table(stooges)       // display the array as a table
 
-    console.log(`----- adding an elememnt to start of the array ane one to the end -----`)
+    console.log(`----- adding an elememnt to start of the array and one to the end -----`)
 
     stooges.push("Shemp")        //  Add an element to end of the array
     stooges.unshift("Curly Joe") //  Add an element to start of the array

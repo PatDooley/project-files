@@ -1,0 +1,108 @@
+body header 
+{
+ background-color: black;
+ height: 5em;
+ display: flex;
+ align-items: center;
+ position: sticky;
+ top: 0;
+ z-index: 99;
+ width: 100%;
+}
+body header h2 {
+    color:white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding: 1.5em 0 1.5em 5em;
+}
+
+body header nav {
+padding: 1.5em 0 1.5em 5em;
+}
+
+body header nav ul a {
+    text-decoration: none;
+    color:white;
+    font-size: 1.3em;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 1em;
+
+
+}
+body header nav ul a:active
+{
+color:blue;
+}
+body header nav ul:hover
+{
+color:black;
+background-color:rgb(52, 52, 52);
+
+}
+
+
+
+body header form button {
+    height: 50px;
+    width: 130px;
+    background: transparent; 
+    position:absolute; left:90%;bottom:20%;
+    color:white;
+    font-size:2em;
+    border: none;
+    outline: none;
+    cursor:pointer;
+    
+    
+}
+body header form button:hover {
+    background-color:rgb(52, 52, 52);
+    color:lightblue;
+    
+}
+body
+{
+    /*background-color:ivory ;*/
+    background-image: url('./images/vecteezy_blueprint-background-for-architect-drawing-building-plans-on_28697278-1.jpg'); 
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin:0;
+    text-align: center;
+
+}
+
+div
+{
+    height:1500px;
+    padding: 2em 6em 2em 6em;
+
+}
+
+body img
+{
+    border: 1px solid black;
+    border-radius: 4em;
+    padding: 0em;
+    width: 20%;
+}
+body div h1
+{
+    font-size: 4em;
+    background-color: rgba(0,0,0,.5);
+    color: ivory; 
+    display:inline-block;
+    text-align : center;
+}
+body div p 
+{
+
+    font-size:2em;
+    background-color: rgba(0,0,0,.5);
+    -webkit-font-smoothing: antialiased;
+    color: ivory;
+    
+    
+
+
+    
+}

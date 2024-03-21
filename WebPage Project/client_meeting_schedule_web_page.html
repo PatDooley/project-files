@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Schedule</title>
+    <link rel="stylesheet" href="meeting.css">
+</head>
+<body>
+    <header>
+        <h2>AAF</h2>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <ul>
+                <a href="./index.html">HOME</a>
+                <a href="/create account.html" class="registerlink">MAKE AN ACCOUNT</a>
+                
+            </ul>  
+        </nav>
+    </header>
+    
+    <div class="wrapper">
+        <h1>Schedule a Meeting</h1>
+        <form id="meetingForm" action="submit_meeting.php" method="post">
+            <div class="input-box">
+                <label for="meetingDate">Date:</label>
+                <input type="date" id="meetingDate" name="meetingDate" required>
+            </div>
+            <div class="input-box">
+                <label for="meetingTime">Time:</label>
+                <input type="time" id="meetingTime" name="meetingTime" required>
+            </div>
+            <div class="input-box">
+                <label for="meetingTopic">Meeting Topic:</label>
+                <input type="text" id="meetingTopic" name="meetingTopic" required>
+            </div>
+            <div class="input-box">
+                <label for="attendees">Number of Attendees:</label>
+                <input type="number" id="attendees" name="attendees" required>
+            </div>
+            <button type="submit">Schedule Meeting</button>
+        </form>
+    </div>
+</body>
+</html>
+
+

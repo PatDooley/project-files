@@ -81,6 +81,7 @@ function printParameters(param1, param2) {
   console.log('printParameter function - parameter example')
   console.log('-'.repeat(50));
 
+
   console.log(`The value of param1 is ${param1}`);
   console.log(`The value of param2 is ${param2}`);
 }

@@ -1,5 +1,5 @@
 {
-  "name": "07-angular-day-3",
+  "name": "my-first-angular-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-devkit/build-angular": "^17.3.0",
     "@angular/animations": "^17.2.0",
     "@angular/common": "^17.2.0",
     "@angular/compiler": "^17.2.0",
@@ -24,7 +23,8 @@
     "zone.js": "~0.14.3"
   },
   "devDependencies": {
-    "@angular/cli": "^17.2.1",
+    "@angular-devkit/build-angular": "^17.2.3",
+    "@angular/cli": "^17.2.3",
     "@angular/compiler-cli": "^17.2.0",
     "@types/jasmine": "~5.1.0",
     "jasmine-core": "~5.1.0",
